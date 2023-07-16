@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#root {
+    width: 1000px;
+    height: 600px;
+}
+
+h1 {
+    margin: 0px;
+}
+
+h2 {
+    margin: 10px
+}
+
+#legend {
+    background: grey;
+    width: 1000px;
+    border-radius: 0 0 5px 5px;
+    padding: 20px 0;
+    height: 150px;
+}
+
+#tooltip {
+    visibility: hidden;
+    position: absolute;
+    width: 200px;
+    height: auto;
+    padding: 12px 16px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background: grey;
+    font-size: 15px;
+}
+.g-tile:hover rect {
+    fill: grey;
+}
+
+.tile-text {
+    line-height: 10px;
+    cursor: default;
+    fill: black;
+}

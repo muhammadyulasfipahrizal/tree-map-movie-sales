@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>D3 Treemap Diagram</title>
+</head>
+<body>
+    <h1 id="title">Movie Sales</h1>
+    <h2 id="description">Highest Grossing Movies</h2>
+    <svg id="root"></svg>
+    <svg id="legend">
+        <g>
+            <rect x="400" y="0" width="20" height="20" fill="#6388b6" class="legend-item"></rect>
+            <text x="430" y="15" fill="white">Action</text>
+        </g>
+        <g>
+            <rect x="400" y="30" width="20" height="20" fill="#ffae11" class="legend-item"></rect>
+            <text x="430" y="45" fill="white">Adventure</text>
+        </g>
+        <g>
+            <rect x="400" y="60" width="20" height="20" fill="#f06e67" class="legend-item"></rect>
+            <text x="430" y="75" fill="white">Animation</text>
+        </g>
+        <g>
+            <rect x="400" y="90" width="20" height="20" fill="#8bc2cb" class="legend-item"></rect>
+            <text x="430" y="105" fill="white">Biography</text>
+        </g>
+        <g>
+            <rect x="550" y="0" width="20" height="20" fill="#53ad87" class="legend-item"></rect>
+            <text x="580" y="15" fill="white">Comedy</text>
+        </g>
+        <g>
+            <rect x="550" y="30" width="20" height="20" fill="#c3bc29" class="legend-item"></rect>
+            <text x="580" y="45" fill="white">Drama</text>
+        </g>
+        <g>
+            <rect x="550" y="60" width="20" height="20" fill="#bc7594" class="legend-item"></rect>
+            <text x="580" y="75" fill="white">Family</text>
+        </g>
+    </svg>
+    <text id="tooltip"></text>
+</body>
+<script src="./index.js"></script>
+</html>
